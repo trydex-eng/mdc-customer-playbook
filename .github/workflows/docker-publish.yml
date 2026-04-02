@@ -4,8 +4,8 @@ on:
    workflow_dispatch:
 
 env:
-  ACR_ENDPOINT: ${{ vars.ACR_ENDPOINT }}
-  IMAGE_NAME: zava-webshop
+  ACR_ENDPOINT: ${{ secrets.ACR_ENDPOINT }}
+  IMAGE_NAME: mdc-playbook
   IMAGE_VERSION: v1.0.0-${{ github.run_number }}
 
 jobs:
